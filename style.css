@@ -1,0 +1,160 @@
+body {
+  width: 100vw;
+  background-color: rgb(187, 201, 225);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+button {
+  margin: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  width: 90px;
+  outline: none;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.084);
+}
+.form-container {
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.053);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 1%;
+  z-index: 89;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+}
+.form {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.058);
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #e3e3e3;
+  margin: 30px;
+}
+input {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.084);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.185);
+}
+input:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.185);
+}
+.btn {
+  margin: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  width: 223px;
+  outline: none;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.084);
+}
+.btn:hover,
+.edit:hover,
+.delete:hover {
+  background-color: #0c66ed;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.185);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#to-do-list {
+  overflow-y: auto;
+  width: 97vw;
+}
+.draggable-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.draggable {
+  width: 200px;
+  border-radius: 8px;
+  margin: 10px;
+  list-style: none;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.276);
+  transition: box-shadow 0.5s, transform 1s;
+}
+.draggable:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.365);
+  transform: scale(1.02);
+  z-index: -1;
+}
+li {
+  list-style: none;
+}
+.taskNumber {
+  text-align: start;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.EditInputField {
+  display: flex;
+  flex-direction: column;
+}
+.editDeleteBtn {
+  display: flex;
+}
+.checkBox {
+  position: absolute;
+  margin: 0;
+}
+.InputField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+h4 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin: 5px 0px;
+  color: rgb(45, 45, 45);
+}
+
+.InActive {
+  background-color: rgba(0, 0, 0, 0.357);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.draggable-list li.over .draggable {
+  background-color: rgb(99, 99, 99);
+}

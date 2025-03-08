@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do-App</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="input-taker" class="form">
+            <input type="text" placeholder="Write Your Task" id="task-value" name="task" size="30" required>
+            <input placeholder="Discribe Your Task" id="task-discription" name="Discription" size="30">
+            <button type="submit" class="btn" id="addTaskBtn">Add</button>
+            <button class="btn" id="Clear_task" novalidate>Clear All</button>
+        </form>
+    </div>
+    <div class="container">
+        <div id="to-do-list">
+            <ul class="draggable-list" id="draggable-list">
+            </ul>
+        </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
